@@ -5,7 +5,7 @@ const { Link } = require('react-router-dom');
 class PageHome extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { instrumentos: [], musicos: [], bandas: [] };
+		this.state = { instrumento: [], musicos: [], bandas: [] };
 	}
 	componentDidMount() {
 		client({ method: 'GET', path: '/api/instrumentos' }).done(response => {
@@ -22,13 +22,13 @@ class PageHome extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Demo App¡</h1>
+				<h1>Demo App</h1>
 
 				<div style={{"width": "100%", "display": "flex"}}>
 					<div style={{"width": "calc(100% / 3)"}}>
 						<Titulo entidad="Instrumentos" emoji="🎸" />
 						<InstrumentoList instrumentos={this.state.instrumentos} />
-						<Link to="/nuevo-instrumento">Nuevo Instrumentos</Link>
+						<Link to="/nuevo-instrumento">Nuevo Instrumento</Link>
 					</div>
 					<div style={{"width": "calc(100% / 3)"}}>
 						<Titulo entidad="Musicos" emoji="🎵" />
