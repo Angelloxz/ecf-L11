@@ -41077,7 +41077,7 @@ var PageHome = /*#__PURE__*/function (_React$Component) {
     _classCallCheck(this, PageHome);
     _this = _super.call(this, props);
     _this.state = {
-      instrumentos: [],
+      instrumento: [],
       musicos: [],
       bandas: []
     };
@@ -41131,7 +41131,7 @@ var PageHome = /*#__PURE__*/function (_React$Component) {
         instrumentos: this.state.instrumentos
       }), /*#__PURE__*/React.createElement(Link, {
         to: "/nuevo-instrumento"
-      }, "Nuevo Instrumento")), /*#__PURE__*/React.createElement("div", {
+      }, "Nuevo Instrumentos")), /*#__PURE__*/React.createElement("div", {
         style: {
           "width": "calc(100% / 3)"
         }
